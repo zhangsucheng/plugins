@@ -3,4 +3,3 @@ function sayHello(person) {
 }
 var user = 'Tom';
 console.log(sayHello(user));
-console.log("hello github")
