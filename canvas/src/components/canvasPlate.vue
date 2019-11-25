@@ -28,16 +28,13 @@
             })
         },
         mounted() {
-            console.log(123)
-            console.log(this.$store)
-            console.log(this.$store.dispatch("dispatch"))
             this.init()
             let self = this
 
             setInterval (function () {
                 self.etc +=1
                 self.active = !self.active
-            },5000)
+            },10000)
             this.dispatchMain()
         },
         methods:{
