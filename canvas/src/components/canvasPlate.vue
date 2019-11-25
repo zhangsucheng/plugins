@@ -1,11 +1,13 @@
 <template>
     <div>
         <div class="animated " :class="{bounce:active}">{{etc}}</div>
+        <div>{{appName}}</div>
         <canvas ref="canvasApp" :width="cWidth" :height="cHeight"></canvas>
     </div>
 </template>
 
 <script>
+    import {mapState,mapActions} from 'vuex'
     export default {
         name: "canvasPlate",
         data(){
@@ -17,10 +19,18 @@
                 bgColor:"#1a211b",
                 etc:1,
                 active:false,
-                mainTrunk: ""
+                mainTrunk: "",
             }
         },
+        computed:{
+            ...mapState({
+                appName:state => state.app.appName
+            })
+        },
         mounted() {
+            console.log(123)
+            console.log(this.$store)
+            console.log(this.$store.dispatch("dispatch"))
             this.init()
             let self = this
 
@@ -28,8 +38,10 @@
                 self.etc +=1
                 self.active = !self.active
             },5000)
+            this.dispatchMain()
         },
         methods:{
+            ...mapActions(["dispatchMain"]),
             init(){
                 let c = this.$refs.canvasApp
                 this.ctx = c.getContext("2d")
