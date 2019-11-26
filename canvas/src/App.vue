@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <canvas-plate></canvas-plate>
+    <router-view ></router-view>
   </div>
 </template>
 
 <script>
-import canvasPlate from './components/canvasPlate'
 
 export default {
   name: 'app',
+  data(){
+    return{
+
+    }
+  },
   components: {
-    canvasPlate
+
   }
 }
 </script>
