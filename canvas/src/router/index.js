@@ -10,7 +10,8 @@ router.beforeEach((to, from, next)=> {
     if (to.name) {
         next()
     } else {
-        next({replace:true,name:"canvas"})
+        //此处权限处理时需要
+        //next({replace:true,name:"welcome"})
     }
 })
 export default router
