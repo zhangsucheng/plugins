@@ -6,13 +6,16 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name les-canvas --dest lib src/main.js"
+    "lib": "vue-cli-service build --target lib --name les-prototype --dest lib prototype/index.js",
+    "registry": "npm config get registry"
   },
   "dependencies": {
+    "address": "^1.1.2",
     "animate.css": "^3.7.2",
     "core-js": "^3.3.2",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
+    "suziyoudian-test": "0.0.4",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
     "vuex": "^3.1.2"
