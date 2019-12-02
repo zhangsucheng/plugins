@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>1234</div>
-
+        <img :src="url" alt="">
     </div>
 
 </template>
@@ -12,7 +12,7 @@
         name: "canvas",
         data(){
             return {
-
+                url:""
             }
         },
         components:{

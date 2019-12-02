@@ -12,8 +12,10 @@
   "dependencies": {
     "address": "^1.1.2",
     "animate.css": "^3.7.2",
-    "core-js": "^3.3.2",
+    "core-js": "^3.4.5",
+    "its-openlayers": "^2.1.7",
     "node-sass": "^4.13.0",
+    "openlayers": "^4.6.5",
     "sass-loader": "^8.0.0",
     "suziyoudian-test": "0.0.4",
     "vue": "^2.6.10",
@@ -21,9 +23,9 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.0.0",
-    "@vue/cli-plugin-eslint": "^4.0.0",
-    "@vue/cli-service": "^4.0.0",
+    "@vue/cli-plugin-babel": "^4.1.1",
+    "@vue/cli-plugin-eslint": "^4.1.1",
+    "@vue/cli-service": "^4.1.1",
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
