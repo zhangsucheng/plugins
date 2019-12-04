@@ -7,7 +7,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name les-prototype --dest lib prototype/index.js",
-    "registry": "npm config get registry"
+    "registry": "npm config get registry",
+    "org": "npm config set registry http://registry.npmjs.org ",
+    "taobao": "npm config set registry https://registry.npm.taobao.org"
   },
   "dependencies": {
     "address": "^1.1.2",

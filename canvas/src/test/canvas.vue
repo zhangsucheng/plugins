@@ -1,13 +1,15 @@
 <template>
     <div>
-        <dynamic-point :width="width" :height="height"></dynamic-point>
+<!--        <dynamic-point :width="width" :height="height"></dynamic-point>-->
+        <animation></animation>
     </div>
 
 </template>
 
 <script>
      import les from "suziyoudian-test"
-     import dynamicPoint from "../components/dynamicPoint/index"
+     // import dynamicPoint from "../components/dynamicPoint/index"
+     import animation from "../components/animation/animation";
     export default {
         name: "canvas",
         data(){
@@ -17,12 +19,13 @@
             }
         },
         components:{
-            dynamicPoint
+             // dynamicPoint,
+            animation
         },
         mounted() {
             console.log(123)
             console.log(les)
-        }
+        },
     }
 </script>
 
