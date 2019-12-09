@@ -1,21 +1,15 @@
-//import welcome from "../components/welcome"
-import canvas from "../components/canvasPlate"
-import test from "../test/canvas"
+import welcome from "../components/welcome"
+import wrap from "../components/wrap";
 
 export default [
     {
-        name:"test",
+        name:"welcome",
         path:"/",
-        component:test
+        component:welcome
     },
-    // {
-    //     name:"welcome",
-    //     path:"/",
-    //     component:welcome
-    // },
     {
-        name:"canvas",
-        path:"/canvas",
-        component:canvas
+        name:"wrap",
+        path:"/wrap",
+        component:wrap
     }
 ]
