@@ -1,3 +1,4 @@
 .idea/
 /canvas/node_modules/
 lib/
+/canvas/package-lock.json
