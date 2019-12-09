@@ -16,10 +16,12 @@
                 menuList:[
                     {
                         name:"animation",
+                        path:"animation/index",
                         alias:"动画"
                     },
                     {
                         name:"dynamicPoint",
+                        path:"dynamicPoint/index",
                         alias:"粒子"
                     }
                 ]

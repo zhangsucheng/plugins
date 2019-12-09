@@ -20,7 +20,7 @@
                 console.log(this.$route)
                 let item = "";
                 try {
-                    item =  () => import('./'+ this.$route.query.name +'/index')
+                    item =  () => import('./'+ this.$route.query.path)
                 } catch (e) {
                     item =  () => import('./lost')
                 }
