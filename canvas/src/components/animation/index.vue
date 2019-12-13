@@ -39,7 +39,6 @@
                 let time = new Date().getTime() * 0.002;
                 let x = Math.sin( time ) * 192 + 256;
                 let y = Math.cos( time * 0.9 ) * 192 + 256;
-                console.log(x + "," + y )
                 this.context.fillStyle =  'rgb(200,200,20)' ;
                 this.context.beginPath();
                 this.context.arc( x, y, 5, 0, Math.PI * 2, true );
