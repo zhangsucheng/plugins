@@ -8,6 +8,7 @@ const router  =  new VueRouter({
 });
 router.beforeEach((to, from, next)=> {
     if (to.name) {
+        console.log(to.name)
         next()
     } else {
         //此处权限处理时需要

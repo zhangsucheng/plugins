@@ -14,7 +14,8 @@
             return {}
         },
         mounted() {
-            this.drawPath(50, 50, 6, 50)
+            //this.drawPath(50, 50, 3, 50)
+            this.drawLine()
         },
         methods: {
             drawPath(x, y, n, r) {
@@ -41,6 +42,36 @@
                 } else {
                     return false
                 }
+            },
+            drawLine() {
+                let el = this.$refs.polygon;
+                let context = el.getContext("2d");
+                context.save();
+                context.translate(50, 50);
+                context.fillStyle = 'rgba(0,0,0,.1)';
+                context.strokeStyle = 'hsl(29,82%,41%)';
+                context.lineWidth = 1;
+
+                context.moveTo(0, 0);
+                context.beginPath();
+
+                context.rotate(Math.PI * 2 / 3)
+                context.lineTo(0, 50);
+                context.fillRect(0, 0, 30, 30)
+
+                context.rotate(Math.PI * 2 / 3)
+                context.fillRect(0, 0, 30, 30)
+               // context.lineTo(0, 50);
+
+                context.rotate(Math.PI * 2 / 3)
+                context.fillRect(0, 0, 30, 30)
+                //context.lineTo(0, 50);
+
+               // context.closePath();
+                context.stroke();
+                // context.fill();
+                //context.restore()
+
             }
         }
     }
