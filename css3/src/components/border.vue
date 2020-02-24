@@ -1,3 +1,4 @@
+<!--边框背景-->
 <template>
     <div class="wrap">
         <div id="border-round">
