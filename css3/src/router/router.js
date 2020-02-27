@@ -12,6 +12,7 @@ import solarsys from "../components/solarsys";
 import column from "../components/column";
 import box from "../components/box";
 import img from "../components/img";
+import button from "../components/button";
 export default [
     {
         name:"border",
@@ -82,5 +83,10 @@ export default [
         name: "img",
         path: "/img",
         component: img
+    },
+    {
+        name: "button",
+        path: "/button",
+        component: button
     }
 ]
