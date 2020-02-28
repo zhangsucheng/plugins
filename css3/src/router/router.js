@@ -13,6 +13,7 @@ import column from "../components/column";
 import box from "../components/box";
 import img from "../components/img";
 import button from "../components/button";
+import flex from "../components/flex";
 export default [
     {
         name:"border",
@@ -88,5 +89,10 @@ export default [
         name: "button",
         path: "/button",
         component: button
+    },
+    {
+        name: "flex",
+        path: "/flex",
+        component: flex
     }
 ]
