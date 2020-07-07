@@ -5,6 +5,7 @@
   "main": "builtObject.js",
   "scripts": {
     "dev": "node builtObject.js",
+    "dev1": "node builtProxy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
