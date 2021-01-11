@@ -8,3 +8,5 @@ lib/
 /javaScript/package-lock.json
 /express/node_modules/
 /express/package-lock.json
+/webGL/threejs/node_modules/
+/webGL/threejs/package-lock.json
