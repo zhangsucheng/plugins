@@ -26,7 +26,12 @@
                         name:"dynamicPoint",
                         path:"dynamicPoint/index",
                         alias:"粒子"
-                    }
+                    },
+                  {
+                    name:"maptalks",
+                    path:"maptalks/map",
+                    alias:"地图"
+                  }
                 ]
             }
         },
