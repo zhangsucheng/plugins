@@ -29,7 +29,7 @@
                     },
                   {
                     name:"maptalks",
-                    path:"maptalks/map",
+                    path:"maptalks/openlayer",
                     alias:"地图"
                   }
                 ]

@@ -15,7 +15,7 @@ export default [
     },
     {
         name:"map",
-        path:"/map",
+        path:"/openlayer",
         component:map
     }
 ]

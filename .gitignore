@@ -10,3 +10,7 @@ lib/
 /express/package-lock.json
 /webGL/threejs/node_modules/
 /webGL/threejs/package-lock.json
+/openlayer/node_modules
+/openlayer/package-lock.json
+/openlayer/dist
+/openlayer/.cache
