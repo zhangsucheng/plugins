@@ -6,6 +6,11 @@ import Projection from "ol/proj/Projection"
 import WMTS from "ol/source/WMTS"
 import WMTSTileGrid from "ol/tilegrid/WMTS"
 
+// 画图用
+import {Circle as CircleStyle,Fill,Stroke,Style} from "ol/style";
+import {Vector as VectorLayer} from "ol/layer";
+import {Vector as VectorSource} from "ol/source"
+import {Draw, Modify, Snap} from "ol/interaction";
 
 let resolutions = [
     3.5691915087454206e-4,
@@ -192,3 +197,44 @@ let map = new Map({
     target:"map",
     view:view,
 })
+
+// 画图
+let typeSelect = document.getElementById("type")
+let draw,snap
+let source = new VectorSource()
+let vector = new VectorLayer({
+    source:source,
+    style:new Style({
+        fill: new Fill({
+            color:"rgba(255,255,255,0.2)"
+        }),
+        stroke: new Stroke({
+            color:"#ffcc33",
+            width:2
+        }),
+        image:new CircleStyle({
+            radius:1,
+            fill: new Fill({
+                color:"#ffcc33"
+            })
+        })
+    })
+})
+let modify = new Modify({source:source})
+map.addInteraction(modify)
+
+function addInteractions(){
+    draw = new Draw({
+        source:source,
+        type:typeSelect.value
+    })
+    map.addInteraction(draw)
+    snap = new Snap({source:source})
+    map.addInteraction(snap)
+}
+
+typeSelect.onchange = ()=>{
+    map.removeInteraction(draw)
+    map.removeInteraction(snap)
+    addInteractions()
+}

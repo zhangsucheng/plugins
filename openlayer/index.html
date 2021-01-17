@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        #wrap{
+            display: flex;
+            justify-content: flex-start;
+        }
         #map {
-            width: 1200px;
+            width: 1000px;
             height: 800px;
+            border: 1px solid #ffcc33;
         }
         .ol-attribution{
             display: none;
@@ -14,7 +19,22 @@
     </style>
 </head>
 <body>
-<div id="map"></div>
+<div id="map-wrap">
+    <div id="map"></div>
+    <div id="operation">
+        <form action="form-online">
+            <label for="type"></label>
+            <select name="type" id="type">
+                <option value="Point">Point</option>
+                <option value="LineString">LineString</option>
+                <option value="Polygon">Polygon</option>
+                <option value="Circle">Circle</option>
+            </select>
+        </form>
+
+    </div>
+</div>
+
 <script src="./JYindex.js"></script>
 </body>
 </html>
