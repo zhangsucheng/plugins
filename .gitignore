@@ -14,3 +14,5 @@ lib/
 /openlayer/package-lock.json
 /openlayer/dist
 /openlayer/.cache
+/mineData/3d/package-lock.json
+/mineData/3d/node_modules
